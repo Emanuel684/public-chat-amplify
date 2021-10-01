@@ -1,0 +1,14 @@
+{
+    "CreateAPIKey": 1,
+    "AppSyncApiName": "publicchat",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authpublicchat84408a0c",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "amplify-publicchat-dev-83040-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/0605ec598fd195f5110fdc5a741f9a8efa96cb25"
+}
